@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<h1>All Resturaunts</h1>
+
+<% for (let oneResturaunt of resturaunts) { %>
+    <p>Name: <%= oneResturaunt.name %> </p>
+    <a href="/resturaunts/<%= oneResturaunt.id %>">See details</a>
+<% } %>
+
+</body>
+
+</html>
