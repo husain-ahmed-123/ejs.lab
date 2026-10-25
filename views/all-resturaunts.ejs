@@ -9,7 +9,7 @@
 
 <body>
 <h1>All Resturaunts</h1>
-
+<%- include('./navbar') %>
 <% for (let oneResturaunt of resturaunts) { %>
     <p>Name: <%= oneResturaunt.name %> </p>
     <a href="/resturaunts/<%= oneResturaunt.id %>">See details</a>
